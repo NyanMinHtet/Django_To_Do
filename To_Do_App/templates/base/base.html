@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav>
+      <button class="btn btn-outline-dark d-md-none" id="toggle-sidebar" data-bs-theme="dark"><i class="bi bi-list"></i> Menu</button>
+
+      </div>
+      <div class="sidebar object-fit">
+        <h4 class="text-center" style="color: white;">Nyan Htet's Workspace</h4>
+        <hr>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house-door"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-inbox"></i>Inbox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-gear"></i>Settings & Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-people-group"></i>Create a Teamspace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-shapes"></i>Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-trash"></i>Trash</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-question-circle"></i>Help & Support</a>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="dropdown">
+          <a href="#" class="text-decoration-none text-white dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-arrow-up-circle"></i>
+            <strong>Upgrade Plan</strong>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    
+      <div class="main-content">
+
+        <h1>Content Area</h1>
+        <!-- Your content here -->
+      </div>
+
+      <script>
+        document.getElementById('toggle-sidebar').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
